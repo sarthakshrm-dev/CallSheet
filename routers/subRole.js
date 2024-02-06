@@ -13,7 +13,6 @@ router.delete("/delete", verifyTokenAdmin, SubRoleController.deleteSubRole);
 router.get("/getAll", SubRoleController.getAllSubRoles);
 router.get(
   "/get-subRoles-by-roleId/:roleId",
-  verifyTokenAndAuthorization,
   SubRoleController.getSubRolesByRoleId
 );
 
